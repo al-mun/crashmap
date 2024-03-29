@@ -1,12 +1,11 @@
-.body{
+/* .body{
   position: relative;
-}
+} */
 #map {
     position: absolute;
-    top: 100px;
+    top: 150px;
     bottom: 0;
     width: 100%;
-    max-width: 900px;
   }
 
 .mapstyles-select {

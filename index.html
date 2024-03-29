@@ -7,10 +7,26 @@
     <script src="https://cdn.maptiler.com/maptiler-sdk-js/v1.2.0/maptiler-sdk.umd.min.js"></script>
     <link href="https://cdn.maptiler.com/maptiler-sdk-js/v1.2.0/maptiler-sdk.css" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css">
+    <style>
+      #map {
+        width: 100%;
+        height: 400px;
+      }
+      #zoom-level {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+    </style>
 </head>
-<body>
+<body style="font-family:Arial, Helvetica, sans-serif;">
+  <div id="zoom-level">Zoom Level: <span id="current-zoom"></span></div>
     <div class="map-container">
-        <h1>Davie Fatal Road Deaths Map</h1>
+        <h1>Davie Road Crashes 2023</h1>
+        <h2 id="total-crashes"></h2>
         <select class="mapstyles-select">
             <optgroup label="Navigation and city exploration">
               <option value="STREETS">STREETS</option>
